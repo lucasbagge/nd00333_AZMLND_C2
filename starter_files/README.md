@@ -1,6 +1,3 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
-
 # How to operationalize a Machine Learning project with Azure ML
 
 In this project I wil work on the [Bank Marketing dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) and use Azure to configure a cloud based Machine Learning production model, deploy it, and consume it. To this we will also create, publish and consume a pipeline.
@@ -94,8 +91,6 @@ In the course we have looked at [Apache Benchmark](http://httpd.apache.org/docs/
 
 ![](../screenshots/pipelines-scheduled.png)
 
-
 ## Screen Recording
 
 For showing the process I have made a short video where I highlight the process of creating a model to consuming it and can be seen at [youtube](https://www.youtube.com/watch?v=UuzyFGixeps). 
-
