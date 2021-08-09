@@ -1,6 +1,14 @@
 # How to operationalize a Machine Learning project with Azure ML
 
-In this project I wil work on the [Bank Marketing dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) and use Azure to configure a cloud based Machine Learning production model, deploy it, and consume it. To this we will also create, publish and consume a pipeline.
+In this project I will build and end to end machine learning project with AML.
+The business case is that we are having a data from 
+[Bank Marketing dataset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv)
+and want to build a classification model where the goal is to predict if the client will subscrib to a term deposit.
+
+Taking the model though all of the lifecycles of a Machine Learning model I have
+used AutoML for building multiple models, deployed it into production using Azure Container Instance (ACI) and
+consumed it via a REST endpoint. 
+At the end of the project I have also create, publish and consume a pipeline.
 
 ## Architectural Diagram
 
