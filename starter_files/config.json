@@ -1,0 +1,5 @@
+{
+    "subscription_id": "64d7fa62-a8c4-45dc-8f71-05b6dd2a3d50",
+    "resource_group": "aml-test-rg",
+    "workspace_name": "aml-test"
+}
