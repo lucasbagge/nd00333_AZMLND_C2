@@ -45,6 +45,10 @@ In the course we have looked at [Apache Benchmark](http://httpd.apache.org/docs/
 
 ![](../screenshots/app-in.png)
 
+### Running logs
+
+![](../screenshots/app-logs.png)
+
 3) Swagger: Now we need to build an REST Api (application programming interface) and to do that we use **Swagger** which is a tool that is very common to use for building REST Apis. Here we can make documentation for our colleagues so they now how to consume the model. It is also essentiel in the automated process so we can make request to the site. At first we need to run swagger.sh that pulls an docker image with our swagger ui. For running the REST Api we run serve.py that exposes our local swagger.json settings. From the Swagger REST Api we can access the model at test if we can request prediction from the given model.   
 
 ### My Swagger output
