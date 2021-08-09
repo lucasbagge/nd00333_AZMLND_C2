@@ -98,3 +98,6 @@ In the course we have looked at [Apache Benchmark](http://httpd.apache.org/docs/
 ## Screen Recording
 
 For showing the process I have made a short video where I highlight the process of creating a model to consuming it and can be seen at [youtube](https://www.youtube.com/watch?v=UuzyFGixeps). 
+
+For the correctness for my past project I have included another video with
+me explaning AutoML [model](https://youtu.be/tOiNPRW2JsU).
