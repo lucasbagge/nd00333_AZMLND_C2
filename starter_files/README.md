@@ -25,7 +25,7 @@ In the course we have looked at [Apache Benchmark](http://httpd.apache.org/docs/
 
 ## Key steps
 
-1) AutoML: At first we configure the AutoML run where we train several models on the data. Here we specify the compute cluser, ML task and other settings. After the run is done we can se what model has showned the best results. In our case the algoritme `VotingsEnsemble` has the highest accuracy on **0.92**.
+1) AutoML: The first thing to do is to register your data to the data storage. After registered the data we can configure the AutoML run where we train several models on the  given data, here it is the Bank Marketing Data. Here we specify the compute cluser, ML task and other settings. After the experiment is done we can se what model has the best results. In our case the algoritme `VotingsEnsemble` has the highest accuracy on **0.92** and we choose that to go with.  
 
 ### Dataset registed
 
@@ -39,13 +39,13 @@ In the course we have looked at [Apache Benchmark](http://httpd.apache.org/docs/
 
 ![](../screenshots/best.png)
 
-2) Take the best model and deploy it: Now we have the best model we would like to deploy it so other can consume it. For doing that we use `ACI` so we can access endpoints though various services and interact with the model. 
+2) Take the best model and deploy it: Now we have the best model we would like to deploy it so other can consume it and we also enable `Aucthentication` and deploying it using Azure Container Instance (ACI). For enable Application Insight we use the file logs.py. If we dont execute logs.py **Application Insights** would be disabled.
 
 ### Application insights
 
 ![](../screenshots/app-in.png)
 
-3) Swagger: Now we need to build an REST Api (application programming interface) and to do that we use **Swagger** which is a tool that is very common to use for building REST Apis. Here we can make documentation for our colleagues so they now how to consume the model. It is also essentiel in the automated process so we can make request to the site.
+3) Swagger: Now we need to build an REST Api (application programming interface) and to do that we use **Swagger** which is a tool that is very common to use for building REST Apis. Here we can make documentation for our colleagues so they now how to consume the model. It is also essentiel in the automated process so we can make request to the site. At first we need to run swagger.sh that pulls an docker image with our swagger ui. For running the REST Api we run serve.py that exposes our local swagger.json settings. From the Swagger REST Api we can access the model at test if we can request prediction from the given model.   
 
 ### My Swagger output
 
@@ -55,13 +55,13 @@ In the course we have looked at [Apache Benchmark](http://httpd.apache.org/docs/
 
 ![](../screenshots/swagger-results.png)
 
-4) Consume endpoint: The model is deployed and we now need to consume it. For consuming the endpoing we use the given scropt endpoint.py where we can interact with the model and make predictions.
+4) Consume endpoint: The model is now deployed and we can interact with it. For doing that we use endpoint.py where we specify the web service and keys so we can send request to the model. When we send a request to the model we will recieve a prediction for the given data like is shown in the below picture.  
 
 ### My output for endpoint.py
 
 ![](../screenshots/enpoint.png)
 
-5) Create, Publish and consume a pipeline: Pipelines is the process of automat the MLOps process. Here we build scripts that run everytime we want to consume the model. We want to publish it so other user can interact with it and consume it.
+5) Create, Publish and consume a pipeline: Pipelines is the process of automat the MLOps process. Here we build a jupyter aml-pipelines-with-automated-machine-learning-step.ipynb where we create, publish. and consume the pipeline so we the user can interact with it. At first we show a create pipeline, the endpoint where people interact with it. For showing that we are running a pipeline though the mention ipynb script we have included seceral picture for this.
 
 ### Publied pipeline
 
